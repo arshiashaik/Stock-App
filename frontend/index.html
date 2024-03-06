@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Stocks!</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Stocks</h1>
+        <form id="search-form">
+            <button id="search-button" type="submit"><img src="./images/search.svg" alt="search button"
+                    id="search" /></button>
+            <input type="text" placeholder="Search..." id="search-input" required />
+            <button id="clear-button"><img src="./images/clear.svg" alt="clear search button" id="clear" /></button>
+        </form>
+    </header>
+
+    <main>
+        <p class="error-message">Error: No record has been found, please enter a valid symbol</p>
+        <div class="stock-information">
+            <div class="tabs">
+                <button onclick="displayTab(event, 'company')" class="tab-links active"
+                    id=" company-tab">Company</button>
+                <button onclick="displayTab(event, 'summary')" class="tab-links" id="summary-tab">Stock Summary</button>
+                <button onclick="displayTab(event, 'insights')" class="tab-links" id=" insights-tab">Insights</button>
+                <button onclick="displayTab(event, 'news')" class="tab-links" id=" news-tab">Latets News</button>
+            </div>
+            <div class="content">
+                <div class="tab-content" id="company"></div>
+                <div class="tab-content" id="summary">
+                    <div class="summary-section"></div>
+                    <div class="trends-section"></div>
+                </div>
+                <div class="tab-content" id="insights"></div>
+                <div class="tab-content" id="news"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
