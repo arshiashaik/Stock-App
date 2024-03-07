@@ -43,5 +43,10 @@ Start the server
 ```bash
   python app.py
 ```
+## 📽️ Preview
+
+
+https://github.com/arshiashaik/Stock-App/assets/91397846/a872caee-f568-4f1d-be5d-4264a12cb72c
+
 
 
