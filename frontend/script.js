@@ -14,7 +14,7 @@ const newsTab = document.querySelector("#news");
 const arrowUp = "frontend/images/GreenArrowUp.png";
 const arrowDown = "frontend/images/GreenArrowUp.png";
 
-const URL = "http://127.0.0.1:5000";
+const URL = "https://stock-app-waon.onrender.com";
 
 // Function to check if data from server is empty
 function isEmpty(obj) {
