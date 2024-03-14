@@ -78,5 +78,5 @@ def get_news_data(ticker):
         return jsonify({"error": "Failed to fetch stock data"}), 500
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
