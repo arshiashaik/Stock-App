@@ -1,5 +1,7 @@
 # 📈 Know Your Stocks
 
+## [Demo Link](https://know-your-stocks.netlify.app)
+
 ## 🚀 Introduction
 Know Your Stocks is a web application that allows users to search for stocks and retrieve related data. The application features a search functionality, latest news section about the searched company stock, and insights section that displays charts.
 
